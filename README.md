@@ -48,9 +48,12 @@ Follow the "Running the Application" steps above to test the API integration.
 Contributing
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-![Alt text](URL_to_image)
+## Main Page
+![Alt text](assets/MainPage.png)
 
-![Alt text](URL_to_image)
+## Doing a search for all Lats workouts
+![Alt text](assets/LatsSearch.png)
 
-![Alt text](URL_to_image)
+## Doing a search for all chest workouts that also has Expert Intensity Level
+![Alt text](assets/ChestExpertSearch.png)
 
