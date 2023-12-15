@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="Muscles" placeholder="Muscle Group">
+        <input type="text" name="WorkOut" placeholder="WorkOut">
+        <input type="text" name="Equipment" placeholder="Equipment">
+        <input type="text" name="Intensity_Level" placeholder="Intensity Level">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if data %}
+    <div class="total-count data-container">
+        <br>
+        <p>Total Results: {{ data | length }}</p>
+        <P><Strong>=================</strong></P>
+            <br>
+    </div>
+        <div class="data-container">
+            {% for item in data %}
+                {% if item is mapping %}
+                    {% for key, value in item.items() %}
+                        <p><strong>{{ key }}:</strong> {{ value }}</p>
+                    {% endfor %}
+                {% else %}
+                    <p>{{ item }}</p>
+                {% endif %}
+                <h1><Strong>=================</strong></h1>
+                    <br>
+            {% endfor %}
+        </div>
+    {% endif %}
