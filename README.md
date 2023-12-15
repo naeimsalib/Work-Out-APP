@@ -48,7 +48,9 @@ Follow the "Running the Application" steps above to test the API integration.
 Contributing
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Main Page
+# Demonstration of the Web app to test out the Work Out API
+
+## Main Web APP Page
 ![Alt text](assets/MainPage.png)
 
 ## Doing a search for all Lats workouts
